@@ -46,4 +46,9 @@ public class FloatingCrew : MonoBehaviour
         transform.localScale = new Vector3(size, size, size);
         _spriteRenderer.sortingOrder = (int) Mathf.Lerp(1, 32767, size);
     }
+
+    public EPlayerColor GetCrewColor()
+    {
+        return _playerColor;
+    }
 }

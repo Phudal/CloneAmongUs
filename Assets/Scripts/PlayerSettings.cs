@@ -7,6 +7,8 @@ public class PlayerSettings
 {
     private static EControlType controlType;
 
+    public static string nickname;
+    
     public static EControlType GetControlMode()
     {
         return controlType;

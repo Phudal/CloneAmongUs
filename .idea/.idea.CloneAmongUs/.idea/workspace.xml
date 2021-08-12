@@ -2,14 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560908d8-bcbe-41e3-98d9-d337f95eee2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FloatingCrew.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FloatingCrew.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CreateRoomUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CreateRoomUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Animations/Anim_NicknameInputField.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Animations/Anim_NicknameInputField.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Animations/InputField.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Animations/InputField.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/noshadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/noshadow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_host.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_host.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_mirahq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_mirahq.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_polus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_polus.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_theskeld.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_map_theskeld.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_private.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_private.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_public.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_img_public.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_mirahq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_mirahq.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_polus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_polus.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_theskeld.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Online UI/Sprites/sprite_map_banner_theskeld.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/Shader_Crew.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/Shader_Crew.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FloatingCrew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FloatingCrew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,25 +50,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/OnlineUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreateGameRoomData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/ControlType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FloatingCrew.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Enum/ControlType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SettingUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enum/PlayerColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/FloatingCrew.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CrewFloater.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CreateGameRoomData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreateRoomUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSettings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnlineUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUT5bfESBBKHAUFuAQXnQEnYMs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -78,6 +118,7 @@
       <workItem from="1628511993960" duration="16000" />
       <workItem from="1628512037451" duration="2605000" />
       <workItem from="1628666546250" duration="1759000" />
+      <workItem from="1628760808635" duration="5550000" />
     </task>
     <servers />
   </component>
@@ -99,6 +140,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
