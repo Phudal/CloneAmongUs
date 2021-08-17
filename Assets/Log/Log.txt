@@ -1,0 +1,6 @@
+54-17 08::54::57 -- File: DebugClass.cs | this is start - file
+54-17 08::54::57 -- Line: 108 | this is start - line
+54-17 08::54::57 -- File: DebugClass.cs | Line: 113 | this is start - file and line
+59-17 08::59::58 -- File: Temp.cs | this is start - file
+59-17 08::59::58 -- Line: 14 | this is start - line
+59-17 08::59::58 -- File: Temp.cs | Line: 15 | this is start - file and line

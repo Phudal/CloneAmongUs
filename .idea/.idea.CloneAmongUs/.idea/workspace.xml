@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560908d8-bcbe-41e3-98d9-d337f95eee2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/UnityLogClass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Log.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Log/Log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +49,9 @@
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Enum/SortingType.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Sorting Sprite/SortingSprite.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/UnityLogClass.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUT5bfESBBKHAUFuAQXnQEnYMs" />
@@ -111,6 +115,8 @@
       <workItem from="1628838254572" duration="7763000" />
       <workItem from="1628854872951" duration="1203000" />
       <workItem from="1628930212154" duration="1404000" />
+      <workItem from="1629198740358" duration="3406000" />
+      <workItem from="1629202429619" duration="210000" />
     </task>
     <servers />
   </component>
