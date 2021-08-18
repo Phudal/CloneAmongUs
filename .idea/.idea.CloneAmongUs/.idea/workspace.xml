@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560908d8-bcbe-41e3-98d9-d337f95eee2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/UnityLogClass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Log.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Log/Log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +12,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Runtime/NetworkIdentity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Sorting Sprite/SortingSprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Editor/NetworkScenePostProcess.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Enum/SortingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -42,16 +47,22 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreateRoomUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnlineUI.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/SpawnPosition.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/SpriteSorter.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Enum/SortingType.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Sorting Sprite/SortingSprite.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/UnityLogClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/ColorSelectButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/CustomizeUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/OutlineObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/LobbyUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Lobby/CustomizeLaptop.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUT5bfESBBKHAUFuAQXnQEnYMs" />
@@ -117,6 +128,7 @@
       <workItem from="1628930212154" duration="1404000" />
       <workItem from="1629198740358" duration="3406000" />
       <workItem from="1629202429619" duration="210000" />
+      <workItem from="1629271114344" duration="11839000" />
     </task>
     <servers />
   </component>
