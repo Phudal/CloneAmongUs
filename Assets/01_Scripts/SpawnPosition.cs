@@ -7,7 +7,11 @@ public class SpawnPosition : MonoBehaviour
     [SerializeField] private Transform[] positions;
     
     private int index;
-
+    public int Index
+    {
+        get { return index; }
+    }
+    
     public Vector3 GetSpawnPosition()
     {
         Vector3 pos = positions[index++].position;

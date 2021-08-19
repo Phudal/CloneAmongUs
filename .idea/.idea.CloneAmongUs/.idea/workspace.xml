@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560908d8-bcbe-41e3-98d9-d337f95eee2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/CustomizeLaptop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/OutlineObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/UI/ColorSelectButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/UI/CustomizeUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01_Scripts/UI/LobbyUIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/06_Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/06_Shader/Shader_Crew.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/06_Shader/Shader_Crew.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Sprites.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloneAmongUs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/GameRoomScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/GameRoomScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMover.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMover.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/SpawnPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/SpawnPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/UI/SettingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/UI/SettingUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Material/M_Crew.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Material/M_Crew.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Log/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Log/Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/Shader_Crew.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/Shader_Crew.shadergraph.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +46,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Runtime/NetworkIdentity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/UI/CustomizeUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/OutlineObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/UI/ColorSelectButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/UI/LobbyUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@8.2.0/Editor/Drawing/MaterialGraphEditWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Runtime/NetworkIdentity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Sorting Sprite/SortingSprite.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Editor/NetworkScenePostProcess.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Editor/NetworkScenePostProcess.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Enum/SortingType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/CustomizeLaptop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -46,23 +79,28 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/GamePlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreateRoomUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnlineUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/SpawnPosition.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/SpriteSorter.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Enum/SortingType.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Sorting Sprite/SortingSprite.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/DebugClass.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/Temp.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Debugging/UnityLogClass.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/ColorSelectButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/CustomizeUI.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/OutlineObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/LobbyUIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/01_Scripts/Lobby/CustomizeLaptop.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Manager/RoomManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/ColorSelectButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/LobbyCharacterMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/OutlineObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/CustomizeLaptop.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/LobbyUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/SettingUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/GameRoomSettingUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/CharacterMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/UI/CustomizeUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/SpawnPosition.cs" />
+      <option value="$PROJECT_DIR$/Assets/01_Scripts/Player/RoomPlayer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUT5bfESBBKHAUFuAQXnQEnYMs" />
@@ -129,6 +167,8 @@
       <workItem from="1629198740358" duration="3406000" />
       <workItem from="1629202429619" duration="210000" />
       <workItem from="1629271114344" duration="11839000" />
+      <workItem from="1629290475428" duration="446000" />
+      <workItem from="1629357830520" duration="8176000" />
     </task>
     <servers />
   </component>

@@ -10,12 +10,6 @@ public class RoomManager : NetworkRoomManager
     {
         base.OnRoomServerConnect(conn);
 
-        // 스폰 포지션을 가져옴
-        Vector3 spawnPos = FindObjectOfType<SpawnPosition>().GetSpawnPosition();
-        
-        // 플레이어를 생성 후
-        var player = Instantiate(spawnPrefabs[0], spawnPos, Quaternion.identity);
-        // 방금 생성된 오브젝트가 새로 접속한 플레이어 소유임을 알림  
-        NetworkServer.Spawn(player, conn);
+
     }
 }
