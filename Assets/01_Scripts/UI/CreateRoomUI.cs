@@ -138,7 +138,29 @@ public class CreateRoomUI : MonoBehaviour
 
     public void CreateRoom()
     {
-        var manager = RoomManager.singleton;
+        var manager = RoomManager.singleton as RoomManager;
+
+        // 임포스터 인원 수에 따라서 플레이어 최소 인원 설정
+        switch (_roomData.ImposterCount)
+        {
+            case 1:
+                manager.minPlayerCount = 4;
+                break;
+            case 2:
+                manager.minPlayerCount = 7;
+                break;
+            case 3:
+                manager.minPlayerCount = 9;
+                break;
+            default:
+                manager.minPlayerCount = 9;
+                break;
+        }
+
+        // 임포스터 수 저장
+        manager.imposterCount = _roomData.ImposterCount;
+        // 최대 참가자 수 저장
+        manager.maxConnections = _roomData.MaxPlayerCount;
         
         // 방 설정
         manager.StartHost();

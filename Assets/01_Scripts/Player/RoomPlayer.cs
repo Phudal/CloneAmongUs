@@ -39,13 +39,22 @@ public class RoomPlayer : NetworkRoomPlayer
         
         // 서버일 때만 호출
         if (isServer)
+        {
             SpawnLobbyPlayerCharacter();
+            // UN_LOG.Log("SpawnLobbyPlayerCharacter");
+            // UN_LOG.LogWithFileAndLine("msg");
+            UN_LOG.Log("net id - " + netId + "접속");
+        }
+        
+        Console.WriteLine("testing");
     }
 
     private void OnDestroy()
     {
         if (LobbyUIManager.Instance != null)
             LobbyUIManager.Instance.CustomizeUI.UpdateUnselectColorButton(playerColor);
+        
+        UN_LOG.Log("net id - " + netId + "접속 해제");
     }
 
     // Mirror API에서 제공
@@ -109,6 +118,7 @@ public class RoomPlayer : NetworkRoomPlayer
 
     public void SetPlayerColor_Hook(EPlayerColor oldColor, EPlayerColor newColor)
     {
+        LobbyUIManager.Instance.CustomizeUI.UpdateUnselectColorButton(oldColor);
         LobbyUIManager.Instance.CustomizeUI.UpdateSelectColorButton(newColor);
     }
 }

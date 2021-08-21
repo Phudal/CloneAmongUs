@@ -12,6 +12,7 @@ public class SettingUI : MonoBehaviour
     [SerializeField] private Button KeyboardMouseControlButton;
 
     private Animator _animator;
+    private static readonly int _Close = Animator.StringToHash("Close");
 
     private void Awake()
     {
@@ -46,10 +47,10 @@ public class SettingUI : MonoBehaviour
 
     public IEnumerator CloseAfterDelay()
     {
-        _animator.SetTrigger("Close");
+        _animator.SetTrigger(_Close);
         yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);
-        _animator.ResetTrigger("close");
+        _animator.ResetTrigger(_Close);
     }
     
     // 버튼 등록을 위해서 재구현

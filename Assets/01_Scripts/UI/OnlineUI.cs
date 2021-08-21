@@ -9,6 +9,7 @@ public class OnlineUI : MonoBehaviour
     [SerializeField] private InputField nicknameInputField;
 
     [SerializeField] private GameObject createRoomUI;
+    private static readonly int On = Animator.StringToHash("On");
 
     public void OnClickCreateRoomButton()
     {
@@ -21,7 +22,7 @@ public class OnlineUI : MonoBehaviour
 
         else
         {
-            nicknameInputField.GetComponent<Animator>().SetTrigger("On");
+            nicknameInputField.GetComponent<Animator>().SetTrigger(On);
         }
     }
 
@@ -35,7 +36,7 @@ public class OnlineUI : MonoBehaviour
 
         else
         {
-            nicknameInputField.GetComponent<Animator>().SetTrigger("On");
+            nicknameInputField.GetComponent<Animator>().SetTrigger(On);
         }
         
         

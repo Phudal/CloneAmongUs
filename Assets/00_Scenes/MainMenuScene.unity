@@ -336,6 +336,8 @@ MonoBehaviour:
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
+  minPlayerCount: 0
+  imposterCount: 0
 --- !u!4 &66989969
 Transform:
   m_ObjectHideFlags: 0
@@ -6690,7 +6692,7 @@ GameObject:
   - component: {fileID: 1660013908}
   - component: {fileID: 1660013907}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Temp Log Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

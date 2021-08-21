@@ -33,10 +33,20 @@ public static class UN_LOG
     }
 
     // 로그 경로 설정
-    public static void SetLogPath()
+    private static void SetLogPath()
     {
         // 폴더 이름
         string directoryName = "/Log";
+        
+        // 프로그램을 실행할 때 마다 별도의 로그 폴더 및 파일 생성 
+        directoryName = directoryName + "/" +
+                        DateTime.Now.Month + "M " +
+                        DateTime.Now.Day + "D " +
+                        DateTime.Now.Hour + "H " +
+                        DateTime.Now.Minute + "M " +
+                        DateTime.Now.Second + "S executed";
+        
+        
         
         // 로그 파일 이름
         string fileName = "Log.txt";
@@ -88,7 +98,7 @@ public static class UN_LOG
         StreamWriter tSW = new StreamWriter(tFile);
         
         // 로그 내용 앞에 시간 추가
-        string tLogfrm = DateTime.Now.ToString("mm-dd hh::mm::ss") + " -- " + msg;
+        string tLogfrm = DateTime.Now.ToString("MM-dd HH::mm::ss") + " -- " + msg;
         
         // 로그 기록
         tSW.WriteLine(tLogfrm);
@@ -117,4 +127,8 @@ public static class UN_LOG
         Log("File: " + string.Intern($"{Path.GetFileName(file)}") + " | " +
             "Line: " + string.Intern($"{line}") + " | " + msg);
     }
+    
+    
 }
+
+
