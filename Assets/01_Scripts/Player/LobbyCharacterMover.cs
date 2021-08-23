@@ -9,6 +9,14 @@ public class LobbyCharacterMover : CharacterMover
     [SyncVar(hook = nameof(SetOwnerNetId_Hook))] 
     public uint ownerNetId;
 
+    public void CompleteSpawn()
+    {
+        if (hasAuthority)
+        {
+            BIsMoveable = true;
+        }
+    }
+    
     public void SetOwnerNetId_Hook(uint _, uint newOwnerId)
     {
         var players = FindObjectsOfType<RoomPlayer>();
@@ -21,11 +29,5 @@ public class LobbyCharacterMover : CharacterMover
             }
         }
     }
-    public void CompleteSpawn()
-    {
-        if (hasAuthority)
-        {
-            BIsMoveable = true;
-        }
-    }
+    
 }

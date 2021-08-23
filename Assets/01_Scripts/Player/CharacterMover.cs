@@ -9,6 +9,10 @@ public class CharacterMover : NetworkBehaviour
 {
     private Animator _animator;
     
+    private SpriteRenderer _spriteRenderer;
+
+    [SerializeField] private Text nickNameText;
+    
     private bool _bIsMoveable;
 
     public bool BIsMoveable
@@ -28,18 +32,25 @@ public class CharacterMover : NetworkBehaviour
     }
 
     private bool bIsMove = false;
+
+    private static readonly int IsMove = Animator.StringToHash("IsMove");
     
+    // ---------------------------------------------- SyncVar --------------------------------------------------
+
     [SyncVar] public float speed = 2.0f;
-
-    private SpriteRenderer _spriteRenderer;
-
+    
+    [SyncVar(hook = nameof(SetNicknameText_Hook))] 
+    public string nickName;
+    
     // 다른 클라이언트들과 동기화됨
-    [SyncVar(hook = nameof(SetPlayerColor_Hook))] 
+    [SyncVar(hook = nameof(SetPlayerColor_Hook))]
     public EPlayerColor playerColor;
     
-    private static readonly int IsMove = Animator.StringToHash("IsMove");
-
-    // Start is called before the first frame update
+    
+    // --------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------- Method --------------------------------------------------
+    // --------------------------------------------------------------------------------------------------------
+    
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -61,6 +72,8 @@ public class CharacterMover : NetworkBehaviour
         Move();
     }
 
+    // ---------------------------------------------- Custom Method ---------------------------------------------
+    
     public void Move()
     {
         if (hasAuthority && BIsMoveable)
@@ -102,8 +115,16 @@ public class CharacterMover : NetworkBehaviour
             
             _animator.SetBool(IsMove, bIsMove);
         }
+
+        if (transform.localScale.x < 0)
+            nickNameText.transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        
+        else if (transform.localScale.x > 0)
+            nickNameText.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     }
 
+    // ---------------------------------------------- Hook ---------------------------------------------
+    
     public void SetPlayerColor_Hook(EPlayerColor oldColor, EPlayerColor newColor)
     {
         if (_spriteRenderer == null)
@@ -112,5 +133,10 @@ public class CharacterMover : NetworkBehaviour
         }
         
         _spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(newColor));
+    }
+
+    public void SetNicknameText_Hook(string _, string value)
+    {
+        nickNameText.text = value;
     }
 }

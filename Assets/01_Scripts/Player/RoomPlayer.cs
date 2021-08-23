@@ -7,6 +7,8 @@ using UnityEngine.Rendering;
 
 public class RoomPlayer : NetworkRoomPlayer
 {
+    public CharacterMover lobbyPlayerCharacter;
+    
     private static RoomPlayer _myRoomPlayer;
     public static RoomPlayer MyRoomPlayer
     {
@@ -31,7 +33,8 @@ public class RoomPlayer : NetworkRoomPlayer
     [SyncVar(hook = nameof(SetPlayerColor_Hook))] 
     public EPlayerColor playerColor;
 
-    public CharacterMover lobbyPlayerCharacter;
+    [SyncVar]
+    public string nickName;
     
     private void Start()
     {
@@ -41,18 +44,28 @@ public class RoomPlayer : NetworkRoomPlayer
         if (isServer)
         {
             SpawnLobbyPlayerCharacter();
-            // UN_LOG.Log("SpawnLobbyPlayerCharacter");
-            // UN_LOG.LogWithFileAndLine("msg");
-            UN_LOG.Log("net id - " + netId + "접속");
+            LobbyUIManager.Instance.ActiveStartButton();
         }
         
-        Console.WriteLine("testing");
+        if (isLocalPlayer)
+        {
+            // 이름 설정
+            CmdSetNickname(PlayerSettings.nickname);
+        }
+        
+        UN_LOG.Log("net id - " + netId + "접속");
+        UN_LOG.Log("nickname - " + PlayerSettings.nickname);
+        
+        LobbyUIManager.Instance.GameRoomPlayerCounter.UpdatePlayerCount();
     }
 
     private void OnDestroy()
     {
         if (LobbyUIManager.Instance != null)
+        {
             LobbyUIManager.Instance.CustomizeUI.UpdateUnselectColorButton(playerColor);
+            LobbyUIManager.Instance.GameRoomPlayerCounter.UpdatePlayerCount();
+        }
         
         UN_LOG.Log("net id - " + netId + "접속 해제");
     }
@@ -66,6 +79,13 @@ public class RoomPlayer : NetworkRoomPlayer
     {
         playerColor = color;
         lobbyPlayerCharacter.playerColor = color;
+    }
+
+    [Command]
+    public void CmdSetNickname(string nick)
+    {
+        nickName = nick;
+        lobbyPlayerCharacter.nickName = nick;
     }
     
     private void SpawnLobbyPlayerCharacter()

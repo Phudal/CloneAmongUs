@@ -7,8 +7,6 @@ using Mirror;
 
 public class GameRuleStore : NetworkBehaviour
 {
-    
-
     [SerializeField] private Toggle bIsRecommendRuleToggle;
     [SerializeField] private Toggle confirmEjectsToggle;
     [SerializeField] private Text emergencyMeetingsText;
@@ -26,6 +24,9 @@ public class GameRuleStore : NetworkBehaviour
     [SerializeField] private Text commonTaskText;
     [SerializeField] private Text complexTaskText;
     [SerializeField] private Text simpleTaskText;
+    [SerializeField] private Text gameRuleOverview;
+    
+    // ---------------------------------------------- SyncVar ---------------------------------------------
     
     [SyncVar(hook = nameof(SetIsRecommendRule_Hook))] private bool bIsRecommendRule;
     [SyncVar(hook = nameof(SetConfirmEjects_Hook))] private bool confirmEjects;
@@ -44,15 +45,33 @@ public class GameRuleStore : NetworkBehaviour
     [SyncVar(hook = nameof(SetCommonTask_Hook))] private int commonTask;
     [SyncVar(hook = nameof(SetComplexTask_Hook))] private int complexTask;
     [SyncVar(hook = nameof(SetSimpleTask_Hook))] private int simpleTask;
-
-    [SerializeField] private Text gameRuleOverview;
-
+    [SyncVar(hook = nameof(SetImposterCount_Hook))] private int imposterCount;
+    
+    // --------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------- Method --------------------------------------------------
+    // --------------------------------------------------------------------------------------------------------
+    
+    void Start()
+    {
+        if (isServer)
+        {
+            var manager = NetworkManager.singleton as RoomManager;
+            imposterCount = manager.imposterCount;
+            anonymouseVotes = false;
+            taskBarUpdates = ETaskBarUpdates.Always;
+            
+            SetRecommendGameRule();
+        }
+    }
+    
+    // ----------------------------------------- Custom Method -----------------------------------------
+    
     public void UpdateGameRuleOverview()
     {
         var manager = NetworkManager.singleton as RoomManager;
         StringBuilder sb = new StringBuilder(bIsRecommendRule ? "추천 설정\n" : "커스텀 설정\n");
         sb.Append("맵 : The Skeld\n");
-        sb.Append($"#임포스터 : {manager.imposterCount}\n");
+        sb.Append($"#임포스터 : {imposterCount}\n");
         sb.Append(string.Format("Confirm Ejects: {0}\n", confirmEjects ? "켜짐" : "꺼짐"));
         sb.Append($"긴급 회의 : {emergencyMeetings}\n");
         sb.Append(string.Format("Anonymous Votes : {0}\n", anonymouseVotes ? "켜짐" : "꺼짐"));
@@ -91,15 +110,7 @@ public class GameRuleStore : NetworkBehaviour
         simpleTask = 2;
     }
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (isServer)
-        {
-            SetRecommendGameRule();
-        }
-    }
-    
+    // ---------------------------------------------- Hook ---------------------------------------------
 
     public void SetIsRecommendRule_Hook(bool _, bool value)
     {
@@ -199,6 +210,13 @@ public class GameRuleStore : NetworkBehaviour
         UpdateGameRuleOverview();
     }
 
+    public void SetImposterCount_Hook(int _, int value)
+    {
+        UpdateGameRuleOverview();
+    }
+  
+    // ---------------------------------------- On Toggle / Change ------------------------------------------
+    
     public void OnRecommendToggle(bool value)
     {
         bIsRecommendRule = value;
@@ -319,4 +337,5 @@ public class GameRuleStore : NetworkBehaviour
         bIsRecommendRule = false;
         bIsRecommendRuleToggle.isOn = false;
     }
+    
 }
