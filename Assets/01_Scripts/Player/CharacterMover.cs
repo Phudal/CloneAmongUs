@@ -34,6 +34,10 @@ public class CharacterMover : NetworkBehaviour
     private bool bIsMove = false;
 
     private static readonly int IsMove = Animator.StringToHash("IsMove");
+
+    [SerializeField] private float characterSize = 0.5f;
+
+    [SerializeField] private float cameraSize = 2.5f;
     
     // ---------------------------------------------- SyncVar --------------------------------------------------
 
@@ -51,7 +55,7 @@ public class CharacterMover : NetworkBehaviour
     // ---------------------------------------------- Method --------------------------------------------------
     // --------------------------------------------------------------------------------------------------------
     
-    private void Start()
+    protected virtual void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
@@ -63,7 +67,7 @@ public class CharacterMover : NetworkBehaviour
             Camera cam = Camera.main;
             cam.transform.SetParent(transform);
             cam.transform.localPosition = new Vector3(0.0f, 0.0f, -10.0f);
-            cam.orthographicSize = 2.5f;
+            cam.orthographicSize = cameraSize;
         }
     }
 
@@ -84,10 +88,10 @@ public class CharacterMover : NetworkBehaviour
                 Vector3 dir = Vector3.ClampMagnitude(
                     new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f), 1.0f);
                 if (dir.x < 0.0f)
-                    transform.localScale = new Vector3(-0.5f, 0.5f, 1.0f);
+                    transform.localScale = new Vector3(-characterSize, characterSize, 1.0f);
                 
                 else if (dir.x > 0.0f)
-                    transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
+                    transform.localScale = new Vector3(characterSize, characterSize, 1.0f);
 
                 transform.position += dir * speed * Time.deltaTime;
 
@@ -102,10 +106,10 @@ public class CharacterMover : NetworkBehaviour
                                    new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0.0f)).normalized;
                     
                     if (dir.x < 0.0f)
-                        transform.localScale = new Vector3(-0.5f, 0.5f, 1.0f);
+                        transform.localScale = new Vector3(-characterSize, characterSize, 1.0f);
                 
                     else if (dir.x > 0.0f)
-                        transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
+                        transform.localScale = new Vector3(characterSize, characterSize, 1.0f);
 
                     transform.position += dir * speed * Time.deltaTime;
                     
